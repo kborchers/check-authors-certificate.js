@@ -5,6 +5,7 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "bin": "check-authors-certificate",
   "dependencies": {
+    "github-request": "^1.2.4",
     "peoplestring-parse": "^2.0.3"
   },
   "files": [

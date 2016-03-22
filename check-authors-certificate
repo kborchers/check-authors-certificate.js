@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-require('./')(process.cwd(), function(error, missing) {
+var isPRArg = process.argv[2] && process.argv[2].split("=");
+var isPR = isPRArg && isPRArg[0] === "isPR" && isPRArg[1] === "true";
+require('./')(isPR, process.cwd(), function(error, missing) {
   if (error) {
     console.error(error)
     process.exit(1) }
